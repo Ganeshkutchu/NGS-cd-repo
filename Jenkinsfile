@@ -18,7 +18,8 @@ pipeline {
             steps {
                 sh """
                    cat deployment.yml
-                   sed -i "s/${APP_NAME}.*/${APP_NAME}:${IMAGE_TAG}/g" deployment.yml
+                   sed -i "s|public.ecr.aws/q2v7l2n8/ganesh8195/ngs-jobportal:.*|public.ecr.aws/q2v7l2n8/ganesh8195/ngs-jobportal:${IMAGE_TAG}|g" deployment.yml
+
                    cat deployment.yml
                 """
             }
