@@ -1,5 +1,5 @@
 pipeline {
-    agent { label "Jenkins-Agent" }
+    agent { label "slave-1" }
     environment {
               APP_NAME = "ngs-app-pipeline"
     }
