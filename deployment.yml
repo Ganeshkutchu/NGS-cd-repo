@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: jobportalcontainer
-          image: public.ecr.aws/q2v7l2n8/ganesh8195/ngs-jobportal:1.0.0-45
+          image: public.ecr.aws/q2v7l2n8/ganesh8195/ngs-jobportal:1.0.0-46
           ports:
             - containerPort: 9595
